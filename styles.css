@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #121212, #054443, #121212
+        
+    );
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.slogan {
+    color: #00B7B3;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.info p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.info i {
+    color: #00B7B3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    color: white;
+}
+
+.whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.tiktok {
+    background-color: #000000;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.tiktok::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 183, 179, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.tiktok:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .logo h1 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+}
+
+.slider {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 250px; /* Diminuído um pouco mais */
+    height: auto;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 50px; /* Pequeno ajuste */
+}
+
+.slides-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.btn-maps{
+    color: #128F5D;
+}
+
+.slides-wrapper {
+    display: flex;
+    width: 100%;
+    will-change: transform; /* Otimização de performance */
+}
+.slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
